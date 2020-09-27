@@ -1,0 +1,147 @@
+:root{
+    --green: #00b30c;
+    --gray : #353537;
+    --gray:#eaeaeb;
+    --gray:#777777;
+}
+h1,h2,h3{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+h2{
+    font-size: 3rem;
+}
+
+/* Header Scroll */
+
+.header-scroll {
+    opacity:0;
+    margin-top: -300px;
+    width: 100%;
+    background-color: #fff ;
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+    transition: all .5s ease;
+}
+
+.header-scroll .active{
+    opacity: 1;
+    margin-top: 0;
+    
+}
+
+
+.header-scroll .nav-link{
+    color: #777;
+}
+.header-scroll .btn-outline-success{
+    color: #00b30c;
+}
+.header-scroll .btn-outline-success :hover{
+    color: #fff;
+}
+
+#header{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    min-height: 30rem;
+}
+a.btn-outline-light:hover{
+    color: black !important;
+}
+#header .nav-link{
+    color: white !important;
+}
+.hero-title{
+    font-weight: 700;
+
+}
+.hero-caption{
+    min-height: 25rem;
+}
+/*features*/
+.features{
+    overflow:hidden;
+    padding-bottom: 60px;
+    height: calc(auto+30px);
+
+}
+.features p{
+    opacity: 0;
+    padding-top: 30px;
+    transition: all .3s ease;
+}
+.features h3::before{
+    content:'' ;
+    display: block;
+    margin: 5px auto 20px auto;
+    height: 2px;
+    width: 60px;
+    background-color: #00b30c;
+    transition: all .2s ease;
+}
+.features:hover h3::before{
+    width: 180px !important;
+}
+
+.features:hover p{
+    display: block;
+    opacity: 1;
+    padding-top: 10px;
+    color: #999;
+}
+#banner .row{
+    height: 25rem;
+
+}
+#category container{
+    width: 100%;
+}
+
+#category .logo{
+    background-image: url(../img/service_1.png);
+    width: 18%;
+}
+#category .Word-press{
+    background-image: url(../img/service_2.png);
+    width: 18%;
+}
+#category .Audio{
+    background-image: url(../img/service_3.png);
+    width: 18%;
+}
+#category .translate{
+    background-image: url(../img/service_4.png);
+    width: 18%;
+}
+#category .social-media{
+    background-image: url(../img/service_5.png);
+    width: 18%;
+}
+
+#category .description{
+    height: 20rem;
+    background-size: cover;
+}
+#category .description p{
+    font-size: 0.9rem;
+}
+
+#category .description span{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#category .row>div{
+    flex: 0 0 clac(50% - 1rem);
+    margin-top: 1rem;
+}
+
+@media(min-width:992px){
+ #category .row .div{
+    flex: 0 0 calc(20%-1rem);
+    margin-top: 0rem;
+  }
+}
+
+
+
